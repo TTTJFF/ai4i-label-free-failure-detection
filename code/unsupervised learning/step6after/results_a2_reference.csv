@@ -1,0 +1,5 @@
+rule,cost,alarms,note
+never alarm,102000.0,0,reference
+always inspect,289800.0,3000,reference
+oracle 2-tier (test-tuned),58100.0,155,"oracle, uses test labels"
+"step 6 published pipeline (L2b, 300 rows)",67500.0,95,from step 6

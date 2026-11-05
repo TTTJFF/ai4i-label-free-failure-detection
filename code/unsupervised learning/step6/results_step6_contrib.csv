@@ -1,0 +1,5 @@
+reason,true_detections,false_alarms,precision
+PWF,19,23,0.4523809523809524
+OSF,20,8,0.7142857142857143
+HDF,1,24,0.04
+unknown,0,0,0.0

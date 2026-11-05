@@ -1,0 +1,4 @@
+variant,precision,recall,f1,n_flagged
+"learned, global quantile",0.7317073170731707,0.29411764705882354,0.4195804195804196,41
+"learned, per-machine-type quantile",0.6904761904761905,0.28431372549019607,0.4027777777777778,42
+true document constants (reference),1.0,0.47058823529411764,0.64,48

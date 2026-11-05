@@ -1,0 +1,11 @@
+* text=auto eol=lf
+
+*.py   text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+
+# Binary: never touch line endings
+*.csv  -text
+*.pdf  -text
+*.png  -text
+*.json -text

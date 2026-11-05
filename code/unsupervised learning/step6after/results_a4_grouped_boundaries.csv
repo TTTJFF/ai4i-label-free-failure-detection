@@ -1,0 +1,10 @@
+feature,side,mode,machine_type,n_train,true_constant,learned_global,learned_per_type,err_global_pct,err_per_type_pct
+Overstrain [Nm*min],upper,OSF,L,4217,11000.0,11730.4,12011.8,6.64,9.2
+Overstrain [Nm*min],upper,OSF,M,2078,12000.0,11730.4,11724.1,-2.25,-2.3
+Overstrain [Nm*min],upper,OSF,H,705,13000.0,11730.4,11525.5,-9.77,-11.34
+Power [W],upper,PWF,L,4217,9000.0,9137.8,9237.3,1.53,2.64
+Power [W],upper,PWF,M,2078,9000.0,9137.8,9067.8,1.53,0.75
+Power [W],upper,PWF,H,705,9000.0,9137.8,8932.1,1.53,-0.75
+Power [W],lower,PWF,L,4217,3500.0,3566.2,3631.0,1.89,3.74
+Power [W],lower,PWF,M,2078,3500.0,3566.2,3562.9,1.89,1.8
+Power [W],lower,PWF,H,705,3500.0,3566.2,3558.2,1.89,1.66

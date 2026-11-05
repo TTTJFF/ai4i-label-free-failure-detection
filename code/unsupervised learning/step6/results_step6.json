@@ -1,0 +1,156 @@
+{
+  "pipeline": {
+    "threshold": 14.44233682504304,
+    "calibration_rate": 0.04666666666666667,
+    "watch_threshold": 4.9333819315706915,
+    "cost_model": "C(FN)=1000, C(FP)=100",
+    "subspaces": 9,
+    "coords": [
+      "Power [W]",
+      "Temp diff [K]",
+      "Overstrain [Nm*min]",
+      "Rotational speed [rpm]"
+    ]
+  },
+  "operating_points": [
+    {
+      "protocol": "cost-optimal threshold (L2b, 300 rows)",
+      "precision": 0.42105263157894735,
+      "recall": 0.39215686274509803,
+      "f1": 0.40609137055837563,
+      "expected_cost": 67500.0,
+      "n_alarms": 95,
+      "tp": 40,
+      "fp": 55,
+      "fn": 62,
+      "tn": 2843,
+      "roc_auc": 0.8969471846709698,
+      "pr_auc": 0.4240447453358425
+    },
+    {
+      "protocol": "L0 POT target 1%",
+      "precision": 0.95,
+      "recall": 0.18627450980392157,
+      "f1": 0.3114754098360656,
+      "expected_cost": 83100.0,
+      "n_alarms": 20,
+      "tp": 19,
+      "fp": 1,
+      "fn": 83,
+      "tn": 2897,
+      "roc_auc": 0.8969471846709698,
+      "pr_auc": 0.4240447453358425
+    },
+    {
+      "protocol": "watch-list threshold (3x rate)",
+      "precision": 0.14722753346080306,
+      "recall": 0.7549019607843137,
+      "f1": 0.2464,
+      "expected_cost": 69600.0,
+      "n_alarms": 523,
+      "tp": 77,
+      "fp": 446,
+      "fn": 25,
+      "tn": 2452,
+      "roc_auc": 0.8969471846709698,
+      "pr_auc": 0.4240447453358425
+    },
+    {
+      "protocol": "never alarm",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "expected_cost": 102000.0,
+      "n_alarms": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 102,
+      "tn": 2898,
+      "roc_auc": 0.8969471846709698,
+      "pr_auc": 0.4240447453358425
+    },
+    {
+      "protocol": "always alarm",
+      "precision": 0.034,
+      "recall": 1.0,
+      "f1": 0.06576402321083172,
+      "expected_cost": 289800.0,
+      "n_alarms": 3000,
+      "tp": 102,
+      "fp": 2898,
+      "fn": 0,
+      "tn": 0,
+      "roc_auc": 0.8969471846709698,
+      "pr_auc": 0.4240447453358425
+    }
+  ],
+  "reason_attribution": [
+    {
+      "reason": "PWF",
+      "n": 19,
+      "agrees_with_mode": 19,
+      "agree_rate": 1.0,
+      "mode_breakdown": "{'TWF': 0, 'HDF': 1, 'PWF': 19, 'OSF': 1, 'RNF': 0}"
+    },
+    {
+      "reason": "OSF",
+      "n": 20,
+      "agrees_with_mode": 20,
+      "agree_rate": 1.0,
+      "mode_breakdown": "{'TWF': 1, 'HDF': 1, 'PWF': 1, 'OSF': 20, 'RNF': 0}"
+    },
+    {
+      "reason": "HDF",
+      "n": 1,
+      "agrees_with_mode": 0,
+      "agree_rate": 0.0,
+      "mode_breakdown": "{'TWF': 0, 'HDF': 0, 'PWF': 1, 'OSF': 0, 'RNF': 0}"
+    },
+    {
+      "reason": "unknown",
+      "n": 0,
+      "agrees_with_mode": 0,
+      "agree_rate": 0.0,
+      "mode_breakdown": ""
+    }
+  ],
+  "reason_contribution": [
+    {
+      "reason": "PWF",
+      "true_detections": 19,
+      "false_alarms": 23,
+      "precision": 0.4523809523809524
+    },
+    {
+      "reason": "OSF",
+      "true_detections": 20,
+      "false_alarms": 8,
+      "precision": 0.7142857142857143
+    },
+    {
+      "reason": "HDF",
+      "true_detections": 1,
+      "false_alarms": 24,
+      "precision": 0.04
+    },
+    {
+      "reason": "unknown",
+      "true_detections": 0,
+      "false_alarms": 0,
+      "precision": 0.0
+    }
+  ],
+  "supervised_reference": {
+    "model": "MLP",
+    "best_f1_threshold": 0.5,
+    "best_f1": 0.6923076923076923,
+    "f1_at_0.5": 0.6923076923076923,
+    "precision_at_best": 0.7875,
+    "recall_at_best": 0.6176470588235294,
+    "min_cost_threshold": 0.06,
+    "cost_at_default": 40700.0,
+    "cost_at_optimal": 24800.0,
+    "C_FN": 1000.0,
+    "C_FP": 100.0
+  }
+}

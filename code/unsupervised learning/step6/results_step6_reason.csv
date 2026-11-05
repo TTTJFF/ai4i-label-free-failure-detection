@@ -1,0 +1,5 @@
+reason,n,agrees_with_mode,agree_rate,mode_breakdown
+PWF,19,19,1.0,"{'TWF': 0, 'HDF': 1, 'PWF': 19, 'OSF': 1, 'RNF': 0}"
+OSF,20,20,1.0,"{'TWF': 1, 'HDF': 1, 'PWF': 1, 'OSF': 20, 'RNF': 0}"
+HDF,1,0,0.0,"{'TWF': 0, 'HDF': 0, 'PWF': 1, 'OSF': 0, 'RNF': 0}"
+unknown,0,0,0.0,
